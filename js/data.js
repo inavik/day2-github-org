@@ -16,16 +16,17 @@ $('button')
     })
     .done(function handleSuccess(data){
       // var items = [];
-      //
-      // $.each(data, function addOneItemToUL(each) {
-      //
-      // })
+      // $.(data).each
+      // //
+      // // $.each(data, function addOneItemToUL(each) {
+      // //
+      // // })
 
 
-      // data.forEach(function addOneItemToUL(each) {
-      //   window.github.addOneItemToUL();
-      //   console.log(each);
-      // })
+      data.forEach(function addOneItemToUL(each) {
+        window.github.addOneItemToUL(each);
+    
+      })
 
     })
     .fail(function handleErrors(xhr){
