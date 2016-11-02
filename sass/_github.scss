@@ -3,12 +3,22 @@ body {
 }
 
 main{
-  margin: 0 auto;
   padding: 25px;
+  text-align: center;
+}
+
+input {
+  margin: 10px;
+}
+button {
+  display: block;
+  margin: 0 auto;
+
 }
 
 ul{
-
+    width: 75%;
+    margin: auto;
 }
 
 li {
@@ -19,7 +29,7 @@ li {
   padding: 5px 25px;
   margin: 15px;
   background-color: #eeeeee;
-  width: 50%;
+
 }
 
 img {
@@ -27,12 +37,10 @@ img {
   height: 75px;
   float: left;
   padding: 13px;
-
 }
 
 p{
 font: 2.5em 'Coiny', cursive, sans-serif;
 color: gray;
 margin: 15px;
-
 }
