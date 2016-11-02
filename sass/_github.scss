@@ -4,6 +4,7 @@ body {
 
 main{
   margin: 0 auto;
+  padding: 25px;
 }
 
 ul{
@@ -13,19 +14,25 @@ ul{
 li {
   list-style: none;
   border: 1px solid gray;
+  border-radius: 20px;
   height: 100px;
   padding: 5px 25px;
+  margin: 15px;
+  background-color: #eeeeee;
+  width: 50%;
 }
 
 img {
   width: 75px;
   height: 75px;
   float: left;
+  padding: 13px;
 
 }
 
 p{
-font: 2em 'Coiny', cursive, sans-serif;
+font: 2.5em 'Coiny', cursive, sans-serif;
 color: gray;
+margin: 15px;
 
 }
