@@ -1,10 +1,18 @@
 @import url("https://fonts.googleapis.com/css?family=Coiny");
-body {
+main {
+  padding: 25px;
+  text-align: center; }
+
+input {
+  margin: 10px; }
+
+button {
+  display: block;
   margin: 0 auto; }
 
-main {
-  margin: 0 auto;
-  padding: 25px; }
+ul {
+  width: 60%;
+  margin: auto; }
 
 li {
   list-style: none;
@@ -13,8 +21,7 @@ li {
   height: 100px;
   padding: 5px 25px;
   margin: 15px;
-  background-color: #eeeeee;
-  width: 50%; }
+  background-color: #eeeeee; }
 
 img {
   width: 75px;
@@ -25,6 +32,7 @@ img {
 p {
   font: 2.5em 'Coiny', cursive, sans-serif;
   color: gray;
-  margin: 15px; }
+  margin: 15px;
+  text-align: left; }
 
 /*# sourceMappingURL=style.css.map */

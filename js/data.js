@@ -19,8 +19,13 @@ $('button')
         window.github.addOneItemToUL(each);
       })
     })
-    .fail(function handleErrors(xhr){
-      console.log(xhr);
+    .fail(function handleErrors(xhr, errorType){
+      if (xhr.status === 404) {
+        $('body').append('<p>Sorry, cannot find that file!</p>');
+      } else if (xhr.status === 500) {
+        $('body').append('<p>Sorry, the server is down!</p>');
+      }
+      console.log(xhr, errorType);
     });
 
 
