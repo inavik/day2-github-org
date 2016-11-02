@@ -6,34 +6,25 @@ window.github = window.github || {};
 $('button')
   .on('click', function load(event) {
     var token= $('input').val();
-    $.ajax({
-      url: 'https://api.github.com/users/jisaacks/orgs',
-      method: 'GET',
-      dataType: 'json',
-      headers: {
-        Authorization: 'token ' + token
-      }
-    })
-    .done(function handleSuccess(data){
-      // var items = [];
-      // $.(data).each
-      // //
-      // // $.each(data, function addOneItemToUL(each) {
-      // //
-      // // })
-
-
+      $.ajax({
+        url: 'https://api.github.com/users/jisaacks/orgs',
+        method: 'GET',
+        dataType: 'json',
+        headers: {
+          Authorization: 'token ' + token
+        }
+      })
+    .done(function handleSuccess(data) {
       data.forEach(function addOneItemToUL(each) {
         window.github.addOneItemToUL(each);
-    
       })
-
     })
     .fail(function handleErrors(xhr){
       console.log(xhr);
     });
 
-  });
+
+});
 
 
 

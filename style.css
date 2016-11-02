@@ -1,3 +1,23 @@
+@import url("https://fonts.googleapis.com/css?family=Coiny");
+body {
+  margin: 0 auto; }
 
+main {
+  margin: 0 auto; }
+
+li {
+  list-style: none;
+  border: 1px solid gray;
+  height: 100px;
+  padding: 5px 25px; }
+
+img {
+  width: 75px;
+  height: 75px;
+  float: left; }
+
+p {
+  font: 2em 'Coiny', cursive, sans-serif;
+  color: gray; }
 
 /*# sourceMappingURL=style.css.map */
